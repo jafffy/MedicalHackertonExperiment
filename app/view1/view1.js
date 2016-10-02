@@ -13,10 +13,8 @@ angular.module('myApp.view1', ['ngRoute'])
   $scope.type = "A";
   $scope.subjectID = "";
   $scope.lastSubjectID = "";
+  $scope.sex = "M";
 
-  $scope.form = {
-    sex: null
-  };
   $scope.goNext = function () {
     window.location = "#!/view2";
   };

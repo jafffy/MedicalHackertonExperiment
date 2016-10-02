@@ -22,7 +22,7 @@ angular.module('myApp.view2', ['ngRoute'])
 	$scope.change = function() {
 		$scope.isElapsedTimeStarted = true;
 
-		if ($scope.content.length <= $scope.lastContent.length) {
+		if (!$scope.content.startsWith($scope.lastContent)) {
 			$scope.content = $scope.lastContent;
 		} else {
 			$scope.lastContent = $scope.content;
