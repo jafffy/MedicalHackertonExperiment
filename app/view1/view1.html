@@ -1,0 +1,26 @@
+<h4>실험 참가자 정보 입력 화면</h4>
+
+<div ng-controller="View1Ctrl">
+    <p>
+        <text>Type: </text>
+        <select ng-model="type">
+            <option value="A">A</option>
+            <option value="B">B</option>
+        </select>
+    </p>
+    <p>
+        <text>Subject: </text>
+        <input ng-model="subjectID">
+    </p>
+    <p>
+        <text>Gender: </text>
+        <select ng-model="sex">
+            <option value="M">M</option>
+            <option value="F">F</option>
+        </select>
+    </p>
+    <p>
+        <!-- TODO: insert input validation code -->
+        <button ng-click="goNext()">Next page</button>
+    </p>
+</div>

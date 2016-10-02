@@ -1,0 +1,20 @@
+<h4>입력 화면</h4>
+
+<div ng-controller="View2Ctrl">
+  <p>
+      <text>입력하세요.</text>
+  </p>
+  <p>
+    <textarea ng-model="content" ng-change="change()"></textarea>
+  </p>
+  <p>
+    <text>전체 단어 수: {{totalWordCount}} </text>
+	  <br>
+    <text>부정 단어 수: {{negativeWordCount}} </text>
+    <br>
+    <text>긍정 단어 수: {{positiveWordCount}}</text>
+    <br>
+    <text>전체 수행 시간: {{representedElapsedTime}}초</text>
+    <br>
+  </p>
+</div>
